@@ -59,13 +59,13 @@ trait Searcher
 		$rules = 'array';
 		
 		$validator = Validator::make($options, [
-            $key => $rules
-        ]);
+		    $key => $rules
+		]);
 
-        if ($validator->fails())
-        {
-        	abort(400, 'Error getting option: ' . $validator->errors()->first());
-        }
+		if ($validator->fails())
+		{
+			abort(400, 'Error getting option: ' . $validator->errors()->first());
+		}
 	}
 
 	private function searching()
