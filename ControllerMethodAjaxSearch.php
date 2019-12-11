@@ -20,5 +20,5 @@
 			return view('users.partials.table_items', ['users' => $users, 'ajax' => true]);
 		}
 
-        abort(405, trans('app.common.no_ajax'));
+        	abort(405, trans('app.common.no_ajax'));
 	}
